@@ -1,0 +1,15 @@
+<div class="row">
+    @for (item of personal; track item) {
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <a href={{item.media.cover_image}}>
+                <img src="{{item.media.cover_image}}" alt="imagen" style="width:100%">
+                <div class="caption">
+                </div>
+            </a>
+            <p>Nombre:{{item.title}}</p>
+            <p>Album:{{item.album}}</p>
+        </div>
+    </div>
+    }
+</div>

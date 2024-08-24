@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div class="form-group">
+    <label for="tipo">Filtrar por tipo:</label>
+    <input id="tipo" type="text" [(ngModel)]="filtroTipo" placeholder="Escribe el tipo de comida"
+      class="form-control" />
+  </div>
+
+  <table class="table table-sm table-striped table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">nombre</th>
+        <th scope="col">tipo</th>
+        <th scope="col">precio</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of productosFiltrados; track item) {
+      @if(item.tipo==item.tipo){
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.tipo}}</td>
+        <td>{{item.precio}}</td>
+      </tr>
+      }
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,31 @@
+
+<div class="container">
+
+<table class="table table-sm table-striped table-bordered">
+  <thead class="thead-dark">
+    <tr>
+        <th>id</th>
+        <th>nombre</th>
+        <th>Tipo</th>
+        <th>precio</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of producto; track item) {
+       
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.tipo}}</td>
+        <td>{{item.precio}}</td>
+        <th>
+          <a [routerLink]="['/editarProductos/', item.id]" class="btn btn-success">Editar</a>
+          <button class="btn btn-danger" (click)="eliminar(item.id)">Eliminar </button>
+        </th>
+      </tr>
+    }
+
+    </tbody>
+  </table>
+</div>

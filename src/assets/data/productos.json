@@ -1,0 +1,52 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Café con Leche",
+      "tipo": "bebidas",
+      "precio": 2.5
+    },
+    {
+      "id": 2,
+      "nombre": "Tortilla de Patatas",
+      "tipo": "entrada",
+      "precio": 4.25
+    },
+    {
+      "id": 3,
+      "nombre": "Ensalada de Atún",
+      "tipo": "ensalada",
+      "precio": 5.5
+    },
+    {
+      "id": 4,
+      "nombre": "Hamburguesa Clásica",
+      "tipo": "plato principal",
+      "precio": 8.95
+    },
+    {
+      "id": 5,
+      "nombre": "Tiramisú",
+      "tipo": "postres",
+      "precio": 3.75
+    },
+    {
+      "id": 6,
+      "nombre": "Agua Fresca",
+      "tipo": "bebidas",
+      "precio": 1.5
+    },
+    {
+      "id": 7,
+      "nombre": "Sopa de Verduras",
+      "tipo": "entrada",
+      "precio": 3.25
+    },
+    {
+      "id": 8,
+      "nombre": "Pollo al Ajillo",
+      "tipo": "plato principal",
+      "precio": 10.95
+    }
+  ]
+}
